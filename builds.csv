@@ -66,7 +66,7 @@ Freminet,Cryo build,ATK% / ER%,Cryo DMG%,CRIT,CRIT > ATK%; ER%,BS / GT / Cryo+15
 Furina,,HP% / ER%,HP% > Hydro DMG%,CRIT,CRIT > HP% > Flat HP; ER%,GT / TotM / HP+15% / ER+20% / Hydro+15% / Skill+20%
 Furina,C6,HP% / ER%,HP% > Hydro DMG%,CRIT,CRIT > HP% > Flat HP; ER%,GT / TotM / HP+15% / ER+20% / Hydro+15% / Skill+20% / MH
 Gaming,,EM / ER% / ATK%,Pyro DMG%,CRIT,CRIT > EM > ATK%; ER%,MH / CWoF / GD / ATK+15% / EM+80 / Pyro+15% / ER+20% / VH
-Ganyu,Freeze,ATK%,Cryo DMG%,CRIT / ATK%,CRIT ≥ ATK% > Crit Rate; EM,BS / Cryo+15% / NO / ATK+15%
+Ganyu,Freeze,ATK%,Cryo DMG%,CRIT / ATK%,CRIT ≥ ATK% > Crit Rate; ER%,BS / Cryo+15% / NO / ATK+15%
 Ganyu,Melt,EM > ATK%,Cryo DMG%,CRIT,EM > CRIT > ATK%,WT / SR / Cryo+15% / EM+80 / ATK+18% / LW / RB / GD
 Ganyu,Mono Cryo,ATK%,Cryo DMG%,CRIT,CRIT ≥ ATK%; ER%,BS / Cryo+15% / NO / ATK+15%
 Ganyu,Support,ER% / ATK%,Cryo DMG%,CRIT,ER% > CRIT > ATK%,EoSF / BS / NO / ER+20% / Cryo+15% / Burst+20% / ATK+18%
