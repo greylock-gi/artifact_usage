@@ -241,6 +241,12 @@ func list_users(artifact []User, mainstat string, title string, icon_tag string)
 			fmt.Printf("</td>\n")
 			fmt.Printf("\t\t\t\t<td class=\"usage-substats\">")
 			substats := eliminate(user.substats, mainstat)
+			for _, substat := range substats {
+				if substat == "CRIT" {
+					substats = eliminate(substats, "Crit Rate")
+					break
+				}
+			}
 			for j, substat := range substats {
 				fmt.Printf("%v", substat)
 				if j != len(substats) - 1 {
