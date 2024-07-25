@@ -35,7 +35,7 @@ var all_mainstats = []string {
 	"CRIT", "Crit Rate", "Healing Bonus",
 }
 
-var substats = []string {
+var all_substats = []string {
 	"ATK%", "HP%", "DEF%", "ER%", "EM",
 	"Flat ATK", "Flat HP", "Flat DEF",
 	"CRIT", "Crit Rate",
@@ -86,7 +86,7 @@ func main() {
 				}
 				user.substats = substats
 
-				flower = append(flower, user)
+				flower = add_user(flower, "", user)
 
 				mainstats, err := split_mainstats(build[2], sands_mainstats)
 				if err != nil {
@@ -94,7 +94,7 @@ func main() {
 					continue
 				}
 				for _, mainstat := range mainstats {
-					sands[mainstat] = append(sands[mainstat], user)
+					sands[mainstat] = add_user(sands[mainstat], mainstat, user)
 				}
 
 				mainstats, err = split_mainstats(build[3], goblet_mainstats)
@@ -103,7 +103,7 @@ func main() {
 					continue
 				}
 				for _, mainstat := range mainstats {
-					goblet[mainstat] = append(goblet[mainstat], user)
+					goblet[mainstat] = add_user(goblet[mainstat], mainstat, user)
 				}
 
 				mainstats, err = split_mainstats(build[4], circlet_mainstats)
@@ -112,11 +112,11 @@ func main() {
 					continue
 				}
 				for _, mainstat := range mainstats {
-					circlet[mainstat] = append(circlet[mainstat], user)
+					circlet[mainstat] = add_user(circlet[mainstat], mainstat, user)
 				}
 			}
 		}
-		list_users(flower, "", "", get_icon_tag(artifact[5], 4) + "<br>Flower<br>" + get_icon_tag(artifact[5], 2) + "<br>Feather")
+		list_users(flower, get_icon_tag(artifact[5], 4) + "<br>Flower<br />" + get_icon_tag(artifact[5], 2) + "<br>Feather")
 		list_users2(sands, "Sands", get_icon_tag(artifact[5], 5))
 		list_users2(goblet, "Goblet", get_icon_tag(artifact[5], 1))
 		list_users2(circlet, "Circlet", get_icon_tag(artifact[5], 3))
@@ -139,7 +139,7 @@ func main() {
 		}
 		user.substats = substats
 
-		flower = append(flower, user)
+		flower = add_user(flower, "", user)
 
 		mainstats, err := split_mainstats(build[2], sands_mainstats)
 		if err != nil {
@@ -147,7 +147,7 @@ func main() {
 			continue
 		}
 		for _, mainstat := range mainstats {
-			sands[mainstat] = append(sands[mainstat], user)
+			sands[mainstat] = add_user(sands[mainstat], mainstat, user)
 		}
 
 		mainstats, err = split_mainstats(build[3], goblet_mainstats)
@@ -156,7 +156,7 @@ func main() {
 			continue
 		}
 		for _, mainstat := range mainstats {
-			goblet[mainstat] = append(goblet[mainstat], user)
+			goblet[mainstat] = add_user(goblet[mainstat], mainstat, user)
 		}
 
 		mainstats, err = split_mainstats(build[4], circlet_mainstats)
@@ -165,11 +165,11 @@ func main() {
 			continue
 		}
 		for _, mainstat := range mainstats {
-			circlet[mainstat] = append(circlet[mainstat], user)
+			circlet[mainstat] = add_user(circlet[mainstat], mainstat, user)
 		}
 	}
-	fmt.Printf("\t\t<h2>As off-set piece</h2>\n")
-	list_users(flower, "", "", "Flower<br>Feather")
+	fmt.Printf("\t\t<h2>As an off-set piece</h2>\n")
+	list_users(flower, "Flower<br />Feather")
 	list_users2(sands, "Sands", "")
 	list_users2(goblet, "Goblet", "")
 	list_users2(circlet, "Circlet", "")
@@ -178,32 +178,44 @@ func main() {
 		"</html>\n")
 }
 
+func add_user(users []User, mainstat string, user User) []User {
+	filtered_substats := []string {}
+	crit_is_present := false
+	for _, s := range user.substats {
+		if s == "CRIT" {
+			crit_is_present = true
+			break
+		}
+	}
+	for _, s := range user.substats {
+		if s == "Crit Rate" && crit_is_present {
+			continue
+		}
+		if s == mainstat && mainstat != "CRIT" {
+			continue
+		}
+		filtered_substats = append(filtered_substats, s)
+	}
+	u := user
+	u.substats = filtered_substats
+	return append(users, u)
+}
+
+
 func get_icon_tag(set_id string, typ int) string {
-	//return "<img src=\"GenshinArtifactIcons/64x64/Artifact_" + strings.Replace(strings.Replace(set_name, " ", "_", -1), "'", "", -1) + fmt.Sprintf("%d", typ) + ".png\" />"
 	return "<img src=\"https://enka.network/ui/UI_RelicIcon_" +  set_id + "_" + fmt.Sprintf("%d", typ) + ".png\" width=\"64\" height=\"64\" />"
 }
 
 func list_users2(artifacts map[string][]User, title string, icon_tag string) {
-//	for mainstat, artifact := range artifacts {
 	for _, mainstat := range all_mainstats {
 		artifact, ok := artifacts[mainstat]
 		if ok {
-			list_users(artifact, mainstat, title, icon_tag)
+			list_users(artifact, icon_tag + "<br />" + mainstat + " " + title)
 		}
 	}
 }
 
-func eliminate(strings []string, e string) []string {
-	result := []string {}
-	for _, s := range strings {
-		if e == "CRIT" || s != e {
-			result = append(result, s)
-		}
-	}
-	return result
-}
-
-func list_users(artifact []User, mainstat string, title string, icon_tag string) {
+func list_users(artifact []User, first_cell_text string) {
 	sort.Slice(artifact, func(i, j int) bool {
 		r := compare_slices_of_strings(artifact[i].substats, artifact[j].substats)
 		if r == 0 {
@@ -222,14 +234,9 @@ func list_users(artifact []User, mainstat string, title string, icon_tag string)
 
 	fmt.Printf("\t\t<table class=\"usage\">\n")
 	fmt.Printf("\t\t\t<tr>\n")
-	fmt.Printf("\t\t\t\t<td class=\"usage-type\" rowspan=\"%v\">%v<br>%v %v</td>\n", cnt, icon_tag, mainstat, title)
+	fmt.Printf("\t\t\t\t<td class=\"usage-type\" rowspan=\"%v\">%v</td>\n", cnt, first_cell_text)
 	fmt.Printf("\t\t\t\t<td class=\"usage-users\">")
 	for i, user := range artifact {
-		/*
-		if i > 0 && user.name == artifact[i-1].name && same_substats(user.substats, artifact[i-1].substats) {
-			continue
-		}
-		*/
 		if user.build != "" {
 			fmt.Printf("<b>%v</b> (%v)", user.name, user.build)
 		} else {
@@ -240,16 +247,9 @@ func list_users(artifact []User, mainstat string, title string, icon_tag string)
 		} else {
 			fmt.Printf("</td>\n")
 			fmt.Printf("\t\t\t\t<td class=\"usage-substats\">")
-			substats := eliminate(user.substats, mainstat)
-			for _, substat := range substats {
-				if substat == "CRIT" {
-					substats = eliminate(substats, "Crit Rate")
-					break
-				}
-			}
-			for j, substat := range substats {
+			for j, substat := range user.substats {
 				fmt.Printf("%v", substat)
-				if j != len(substats) - 1 {
+				if j != len(user.substats) - 1 {
 					fmt.Printf(", ")
 				}
 			}
@@ -310,7 +310,7 @@ func split_mainstats(list string, stats []string) ([]string, error) {
 }
 
 func split_substats(list string) ([]string, error) {
-	return split_stats(list, substats)
+	return split_stats(list, all_substats)
 }
 
 func split_stats(list string, stats []string) ([]string, error) {
