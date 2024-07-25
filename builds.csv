@@ -1,15 +1,15 @@
 Character,Build,Sands,Goblet,Circlet,Substats,Sets
 ,,,,,,
-Albedo,(w/o Gorou),DEF%,Geo DMG% / DEF%,CRIT / DEF%,CRIT > DEF%; ER%,HoOD / GT / AP / Skill+20% / DEF+30% / Geo+15%
+Albedo,w/o Gorou,DEF%,Geo DMG% / DEF%,CRIT / DEF%,CRIT > DEF%; ER%,HoOD / GT / AP / Skill+20% / DEF+30% / Geo+15%
 Albedo,,DEF%,Geo DMG% / DEF%,CRIT,CRIT > DEF%; ER%,HoOD / GT / AP / Skill+20% / DEF+30% / Geo+15%
 Albedo,Support,DEF%,Geo DMG% / DEF%,CRIT,CRIT > DEF%; ER%,TotM / NO / Instructor
-Albedo,Burst (w/o Gorou),DEF%,Geo DMG% / DEF%,CRIT / DEF%,CRIT > DEF% > ATK%; ER%,HoOD / GT / AP / Skill+20% / DEF+30% / Geo+15%
+Albedo,"Burst, w/o Gorou",DEF%,Geo DMG% / DEF%,CRIT / DEF%,CRIT > DEF% > ATK%; ER%,HoOD / GT / AP / Skill+20% / DEF+30% / Geo+15%
 Albedo,Burst,DEF%,Geo DMG% / DEF%,CRIT,CRIT > DEF% > ATK%; ER%,HoOD / GT / AP / Skill+20% / DEF+30% / Geo+15%
 Albedo,"Burst, Support",DEF%,Geo DMG% / DEF%,CRIT,CRIT > DEF% > ATK%; ER%,TotM / NO / Instructor
 Alhaitham,,EM > ATK%,Dendro DMG%,CRIT,EM > CRIT > ATK% > Flat ATK; ER%,GD / DM / EM+80 / Dendro+15% / ER+20%
 Aloy,Burst/Quickswap DPS,ATK% / EM / ER%,Cryo DMG%,CRIT,"CRIT, ATK%, ER%, EM",EoSF / EM+80 / Cryo+15% / Burst+20% / ATK+18% / NO
 Aloy,Support,ER%,Cryo DMG%,CRIT,"ER%, CRIT, ATK%",NO / Instructor
-Aloy,Permafreeze (on-field),ATK%,Cryo DMG%,CRIT,"CRIT, ATK%, ER%",BS
+Aloy,"Permafreeze, on-field",ATK%,Cryo DMG%,CRIT,"CRIT, ATK%, ER%",BS
 Amber,Melt,EM > ATK%,Pyro DMG%,CRIT,CRIT > EM > ATK%; ER%,SR / WT / CWoF / GD / EM+80 / ATK+18%
 Amber,Burgeon,EM,EM,EM,EM,FoPL / GD / EM+80
 Amber,Burst support,ER% / ATK%,Pyro DMG%,CRIT,CRIT > ATK%; ER%,NO / Instructor
@@ -20,8 +20,8 @@ Ayato,,ATK% / ER%,Hydro DMG%,CRIT,CRIT > ATK% > HP%; ER%,HoD / GF / ND / ATK+18%
 Baizhu,,ER% / HP%,HP%,HP% > Healing Bonus,HP%; ER%,DM / OHC / Instructor / NO / SoDP / HP+20% / ER+20%
 Baizhu,Favonius codex,ER% / HP%,HP%,HP% > Healing Bonus | Crit Rate,HP%; ER%,DM / OHC / Instructor / NO / SoDP / HP+20% / ER+20%
 Barbara,Support,HP%,HP%,Healing Bonus,HP% > Flat HP,MB / Healing+15% / HP+20% / Instructor
-Barbara,DPS (4OHC),HP%,HP%,Healing Bonus,HP% > Flat HP,OHC
-Barbara,DPS (Vaporize),ATK%,Hydro DMG%,CRIT,CRIT > EM > ATK% > HP% > Flat ATK > Flat HP,WT / HoD / Hydro+15% / ATK+18% / SR
+Barbara,"DPS, OHC",HP%,HP%,Healing Bonus,HP% > Flat HP,OHC
+Barbara,"DPS, Vaporize",ATK%,Hydro DMG%,CRIT,CRIT > EM > ATK% > HP% > Flat ATK > Flat HP,WT / HoD / Hydro+15% / ATK+18% / SR
 Beidou,,ATK% / ER%,Electro DMG%,CRIT,"ER%, CRIT, ATK%, EM",EoSF / Electro+15% / Burst+20% / ATK+18% / ER+20% / TS / TF
 Bennet,Support,ER% / HP%,HP%,HP% > Healing Bonus,ER% > HP%,NO / Instructor / TotM / ER+20%
 Bennet,On-field DPS,EM ~ ATK% > ER%,Pyro DMG%,CRIT,CRIT > ATK% = EM = ER% > HP%,CWoF / Pyro+15% / ATK+18% / EM+80 / Burst+20% / TF / NO / LW
@@ -39,14 +39,14 @@ Collei,EM Build,ER% / EM,EM,EM,EM; ER%,GD / NO / TotM / DM
 Collei,Physical build,ATK%,Physical DMG%,CRIT,CRIT > ATK%,Physical+15%
 Cyno,,EM > ATK% > ER%,Electro DMG% ≥ EM,CRIT ≥ EM,CRIT > EM > ATK%; ER%,TF / GD / GF / FoPL / Electro+15% / EM+80
 Dehya,On-field DPS,ATK% / ER%,Pyro DMG%,CRIT,ER% > CRIT > ATK% ,EoSF / VG / LW / MH / CWoF / ATK+18% / Pyro+15% / Burst+20%
-Dehya,On-field DPS (C1),ATK% / ER% / HP%,Pyro DMG%,CRIT,ER% > CRIT > ATK% > HP%,EoSF / VG / LW / MH / CWoF / ATK+18% / Pyro+15% / Burst+20% 
-Dehya,On-field DPS (C6),ATK% / ER% / HP%,Pyro DMG%,CRIT,ER% > CRIT > ATK% > HP%,EoSF / VG / MH
+Dehya,C1 On-field DPS,ATK% / ER% / HP%,Pyro DMG%,CRIT,ER% > CRIT > ATK% > HP%,EoSF / VG / LW / MH / CWoF / ATK+18% / Pyro+15% / Burst+20% 
+Dehya,C6 On-field DPS,ATK% / ER% / HP%,Pyro DMG%,CRIT,ER% > CRIT > ATK% > HP%,EoSF / VG / MH
 Dehya,Burgeon/Overload,EM / HP%,EM,EM,EM > Crit Rate = HP%,GD / FoPL / EM+80 / TotM
 Dehya,Off-field support,HP%,HP%,HP% / Healing Bonus,HP%,TotM / Instructor / DM / OHC / MB
 Dendro Traveler,Quicken,ER% > EM ≥ ATK%,Dendro DMG%,CRIT,ER% > CRIT > EM ≥ ATK%,DM / NO / EoSF / GD
 Dendro Traveler,Hyperbloom/Burgeon,ER% > ATK%,Dendro DMG%,CRIT,ER% > CRIT > ATK% > EM,DM
 Dendro Traveler,Pure Bloom,ER% / EM,EM,EM,ER% > EM > CRIT > ATK%,DM / FoPL
-Dendro Traveler,Pure Bloom (Favonius),ER% / EM,EM,EM / Crit Rate,ER% > EM > CRIT > ATK%,DM / FoPL
+Dendro Traveler,"Pure Bloom, Favonius",ER% / EM,EM,EM / Crit Rate,ER% > EM > CRIT > ATK%,DM / FoPL
 Diluc,,ATK% / EM,Pyro DMG%,CRIT,CRIT > EM > ATK%,CWoF / Pyro+15% / ATK+18% / GF
 Diona,,HP%,HP%,HP% / Healing Bonus,HP% > Flat HP,HP+20% / ER+20% / Healing+15% / NO / MB / TotM / BS / OHC / Instructor / DM
 Diona,Favonius,HP%,HP%,HP% / Healing Bonus,Crit Rate> HP% > Flat HP,HP+20% / ER+20% / Healing+15% / NO / MB / TotM / BS / OHC / Instructor / DM
@@ -55,10 +55,10 @@ Dori,Hyperbloom,HP%,HP%,Healing Bonus,HP% > Flat HP,GD / EM+80 / ER+20% / Electr
 Electro Traveler,,ER%,Electro DMG% / EM,CRIT / EM,CRIT > EM > ATK%; ER%,EoSF / ER+20% / Burst+20% / Electro+15% / EM+80 / NO / TF
 Eula,,ATK% > ER%,Physical DMG%,CRIT,CRIT / ATK%; ER%,PF / Physical+15% / ER+20% / EoSF / ATK+18% / Burst+20% / GF / NO
 Faruzan,Support,ER%,,,CRIT / ATK%; ER%,NO / VV / The Exile / ER+20%
-Faruzan,Support (Favonius),ER%,,Crit Rate,CRIT / ATK%; ER%,NO / VV / The Exile / ER+20%
+Faruzan,"Support, Favonius",ER%,,Crit Rate,CRIT / ATK%; ER%,NO / VV / The Exile / ER+20%
 Faruzan,DPS,EM,EM,EM,CRIT / ATK%; ER%,NO / VV / The Exile / ER+20% / TF
-Faruzan,Support (C6),ER% / ATK%,Anemo DMG%,CRIT,CRIT / ATK%; ER%,TotM / GT / ATK+18% / Anemo+15% / ER+20% / VV / EoSF
-Faruzan,DPS (C6),ER% / ATK%,Anemo DMG%,CRIT,CRIT / ATK%; ER%,ATK+18% / Anemo+15% / ER+20% / GT / EoSF / VV / WT / TF
+Faruzan,C6 Support,ER% / ATK%,Anemo DMG%,CRIT,CRIT / ATK%; ER%,TotM / GT / ATK+18% / Anemo+15% / ER+20% / VV / EoSF
+Faruzan,C6 DPS,ER% / ATK%,Anemo DMG%,CRIT,CRIT / ATK%; ER%,ATK+18% / Anemo+15% / ER+20% / GT / EoSF / VV / WT / TF
 Fischl,,ATK%,Electro DMG%,CRIT,CRIT > ATK%; ER%,GT / ATK+18% / ER+20% / EM+80 / Skill+20% / Electro+15% / TF / GD / TotM / TS
 Fischl,Aggravate,EM,Electro DMG%,CRIT,CRIT > ATK% = EM; ER%,GT / ATK+18% / ER+20% / EM+80 / Skill+20% / Electro+15% / TF / GD / TotM / TS
 Freminet,Physical build,ATK% / ER%,Physical DMG%,CRIT,CRIT > ATK%; ER%,PF / Physical+15% / ER+20% / ATK+18% / BM+80
@@ -73,7 +73,7 @@ Ganyu,Support,ER% / ATK%,Cryo DMG%,CRIT,ER% > CRIT > ATK%,EoSF / BS / NO / ER+20
 Geo Traveler,DPS,ATK% / ER%,Geo DMG%,CRIT,CRIT ≥ ATK% > ER% > Flat ATK,ATK+18% / Geo+15% / AP / TS / LW / HoOD / Burst+20% / NO / The Exile / Instructor
 Geo Traveler,Support,ATK% / ER%,Geo DMG%,CRIT,ER% > Crit Rate > ATK% > Flat ATK > CRIT,ATK+18% / Geo+15% / AP / TS / LW / HoOD / Burst+20% / NO / The Exile / Instructor
 Gorou,Favonius,ER%,Geo DMG%,Crit Rate,CRIT > DEF%,NO / The Exile
-Gorou,Favonius (C4),ER%,DEF%,Crit Rate,DEF% > CRIT,NO / The Exile
+Gorou,"C4, Favonius",ER%,DEF%,Crit Rate,DEF% > CRIT,NO / The Exile
 Heizou,ADC,ATK%,Anemo DMG%,CRIT,CRIT ≥ ATK% > EM; ER%,VV / LW / TS / ATK+18% / Anemo+15%
 Heizou,EM Build,EM,EM,EM,EM > ATK% > CRIT; ER%,VV / LW / TS / ATK+18% / Anemo+15%
 Hu Tao,,EM / HP%,Pyro DMG%,CRIT,EM > CRIT > HP% > ATK% > ER%,CWoF / SR / GD / HP+20% / EM+80 / Pyro+15% / NACA+25%
@@ -100,10 +100,10 @@ Kokomi,On-field,ER% / HP%,HP% / Hydro DMG%,HP% / Healing Bonus,HP%; ER%,OCH
 Kokomi,Off-field,ER% / HP%,HP% / Hydro DMG%,HP% / Healing Bonus,HP%; ER%,TotM
 Kokomi,Nilou bloom,EM,EM,EM,EM / HP%; ER%,OCH / GD / EM+80 / FoPL
 Layla,Shielder,HP% / ER%,HP%,HP%,HP%; ER%,TotM / NO / HP+20% / ER+20% / DM / Instructor / The Exile
-Layla,Shielder (Favonius),HP% / ER%,HP%,HP% > Crit Rate,HP% > Crit Rate; ER%,TotM / NO / HP+20% / ER+20% / DM / Instructor / The Exile
+Layla,"Shielder, Favonius",HP% / ER%,HP%,HP% > Crit Rate,HP% > Crit Rate; ER%,TotM / NO / HP+20% / ER+20% / DM / Instructor / The Exile
 Layla,Off-field DPS,HP% / ER%,Cryo DMG%,HP% / CRIT,CRIT > HP%; ER%,BS / EoSF / NO / TotM / HP+20% / Burst+20% / Cryo+15% / ER+20%
 Lisa,On-field DPS,ATK% > EM,Electro DMG%,CRIT,CRIT > ATK% > EM; ER%,TF / TS / EsoF / Electro+15% / Burst+20% / ER+20% / ATK+18%
-Lisa,On-field DPS (Aggravate),ATK% > EM,Electro DMG%,CRIT,CRIT > EM / ATK%; ER%,TF / TS / GD / EsoF / Electro+15% / Burst+20% / ER+20% / ATK+18% / EM+80
+Lisa,"On-field DPS, Aggravate",ATK% > EM,Electro DMG%,CRIT,CRIT > EM / ATK%; ER%,TF / TS / GD / EsoF / Electro+15% / Burst+20% / ER+20% / ATK+18% / EM+80
 Lisa,Off-field,ER% / ATK%,Electro DMG%,CRIT,CRIT > ATK% > EM; ER%,TF / TS / EsoF / Electro+15% / Burst+20% / ER+20% / ATK+18%
 Lisa,Reaction,EM / ER%,EM,EM,EM > ATK% / CRIT; ER%,GD / FoPL / EM+80 / ER+20% / TF
 Lynette,Support / DPS,ER% / ATK%,Anemo DMG%,CRIT,CRIT > ATK%; ER%,VV / EoSF / MH / NO / Anemo+15% / ATK+18% / ER+20% / Burst+20%
@@ -150,7 +150,7 @@ Sucrose,,EM,EM,EM,EM; ER%,VV / Instructor
 Tartaglia,,ATK%,Hydro DMG%,CRIT,CRIT > ATK% > EM; ER%,ND / Hydro+15% / ATK+18% / EoSF / HoD / WT / EM+80 / ER+20% / NACA+25% / Burst+20%
 Tartaglia,Electro-Charged,ATK%,Hydro DMG%,CRIT,CRIT > ATK% > EM; ER%,TS
 Thoma,Shielder,ER% / HP%,HP%,HP%,HP%; ER%,NO / HP+20% / ER+20% / Instructor / EoSF
-Thoma,Shielder (Favonius),ER% / HP%,HP%,HP% / Crit Rate,Crit Rate > HP%; ER%,NO / HP+20% / ER+20% / Instructor / EoSF
+Thoma,"Shielder, Favonius",ER% / HP%,HP%,HP% / Crit Rate,Crit Rate > HP%; ER%,NO / HP+20% / ER+20% / Instructor / EoSF
 Thoma,Burgeon / Overload,ER% / EM / HP%,EM / HP%,EM / HP%,EM / HP%; ER%,FoPL / GD / EM+80 / CWoF / Burst+20%
 Thoma,Off-field DPS,ER% / ATK% / HP%,Pyro DMG% / HP%,CRIT,CRIT > HP% / ATK% > EM; ER%,EoSF / ER+20% / Pyro+15% / Burst+20% / ATK+18% / CWoF / EM+80
 Thoma,On-field DPS,ER% / ATK%,Pyro DMG%,CRIT,CRIT > ATK% > EM; ER%,CWoF / EoSF / GF / Pyro+15% / ATK+18% / Burst+20% / RB
@@ -171,9 +171,9 @@ Xinyan,Physical build,ATK% / DEF% / ER%,Physical DMG%,CRIT,CRIT > ATK% > DEF%; E
 Xinyan,"Physical build, C6",ATK% / DEF% / ER%,Physical DMG%,CRIT,CRIT > ATK% > DEF%; ER%,DEF+30%
 Xinyan,Pyro build,ATK% / DEF% / ER%,Pyro DMG%,CRIT,CRIT > ATK% > DEF%; ER%,LW / ER+20% / Pyro+15% / ATK+18% / Burst+20% / RB / CWoF / DEF+30%
 Yae Miko,Skill + Burst,ATK% / ER%,Electro DMG%,CRIT,CRIT > ATK%; ER%,EosF / GT / Electro+15% / ATK+18% / Skill+20% / Burst+20% / ER+20% / TotM
-Yae Miko,Skill + Burst (Aggravate),ATK% / EM / ER%,Electro DMG%,CRIT,CRIT > ATK%; ER%,GT / GD / Electro+15% / ER+20% / EM+80 / Skill+20% / ATK+18% / TotM
+Yae Miko,"Skill + Burst, Aggravate",ATK% / EM / ER%,Electro DMG%,CRIT,CRIT > ATK%; ER%,GT / GD / Electro+15% / ER+20% / EM+80 / Skill+20% / ATK+18% / TotM
 Yae Miko,Driver,ATK% / ER%,Electro DMG%,CRIT,CRIT > ATK%; ER%,GT / Electo+15% / ATK+18% / Skill+20% / TS / TotM
-Yae Miko,Driver (Aggravate),ATK% / EM / ER%,Electro DMG%,CRIT,CRIT > ATK%; ER%,GD / GT / Electo+15% / EM+80 / ATK+18% / Skill+20% / TotM
+Yae Miko,"Driver, Aggravate",ATK% / EM / ER%,Electro DMG%,CRIT,CRIT > ATK%; ER%,GD / GT / Electo+15% / EM+80 / ATK+18% / Skill+20% / TotM
 Yae Miko,Skill,ATK% / EM / ER%,Electro DMG%,CRIT,CRIT > ATK%; ER%,TotM / GT / GD / Electo+15% / ATK+18% / EM+80 / Skill+20%
 Yanfei,Vaporize,ATK% / EM,Pyro DMG%,CRIT,CRIT > ATK%,CWoF / WT / RB / SR / Electro+15% / EM+80 / ATK+18%
 Yanfei,Overload,EM,EM,EM,EM,CWoF / TF / EM+80
@@ -188,7 +188,7 @@ Yoimiya,,ATK% / EM,Pyro DMG%,CRIT,CRIT > ATK% > EM > ER%,SR / CWoF / GD / EoaO /
 Yun Jin,,DEF% / ER%,DEF%,DEF%,DEF%; ER%,HoOD / DEF+30% / ER+20% / NO / AP
 Yun Jin,Favonius,DEF% / ER%,DEF%,DEF% / Crit Rate,"DEF%, Crit Rate; ER%",HoOD / DEF+30% / ER+20% / NO / AP
 Zhongli,Shielder,HP%,HP%,HP%,HP%,HP+20% / TotM / Instructor / AP / DM
-Zhongli,Shielder (Favonius),HP%,HP%,HP% / Crit Rate,"HP%, Crit Rate",HP+20% / TotM / Instructor / AP / DM
+Zhongli,"Shielder, Favonius",HP%,HP%,HP% / Crit Rate,"HP%, Crit Rate",HP+20% / TotM / Instructor / AP / DM
 Zhongli,Burst support,ATK% / HP%,Geo DMG%,CRIT,CRIT > ATK% > HP%; ER%,NO / EoSF / AP / Burst+20% / ER+20% / ATK+18% / Geo+15%
 Zhongli,Physical build,ATK%,Physical DMG%,CRIT,CRIT > ATK% > HP%; ER%,PF / Physical+15% / GF / ATK+18% / HP+20% / SR / RB / TotM
 Zhongli,Hybrid,ATK% / HP%,Geo DMG%,CRIT,CRIT > ATK% > HP%; ER%,PF /  GF / Physical+15% / ATK+18% / ER+20% / Burst+20% / HP+20% / RB / TotM / SR / AP / EoaO
