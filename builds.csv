@@ -129,16 +129,20 @@ Qiqi,Healer w/ Favonius,ATK%,ATK%,Crit Rate,Crit Rate > ATK%,Crit Rate+12%
 Qiqi,Taser Driver,ATK%,Physical DMG%,CRIT,CRIT > ATK%,OCH / Physical+15% / PF / TotM / Instructor
 Qiqi,Permafreeze Carry,ATK%,Cryo DMG%,CRIT,ATK% > CRIT,OCH
 Raiden,,ER% / ATK%,Electro DMG% / ATK%,CRIT,CRIT > ATK% > ER%,EoSF
-Raiden,EM Build,EM,EM,EM,EM,GD / EM+80 / TotM / DM
+Raiden,EM Build,EM,EM,EM,EM,GD / EM+80 / TotM
+Raiden,"EM Build, Hyperbloom",EM,EM,EM,EM,DM
 Razor,Physical build,ATK%,Physical DMG% / ATK%,CRIT,CRIT > ATK%; ER%,PF / TS / GF / Physical+15% / ATK+18%
 Razor,Aggravate,ATK% / EM,Electro DMG% / ATK%,,CRIT > EM = ATK%; ER%,TF / GD / TS / EM+80
 Razor,Transformative Reaction,EM / ER%,EM,EM,EM; ER%,GD / EM+80 / TF / FoPL
 Razor,"Transformative Reaction, Favonius",EM / ER%,EM,EM / CRIT,EM >> Crit Rate; ER%,GD / EM+80 / TF / FoPL
 Rosaria,,ATK%,Cryo DMG%,CRIT,CRIT > ATK%; ER%,BS / NO / Cryo+15% / ATK+18% / Burst+20%
 Sara,,ATK% / ER%,Electro DMG%,CRIT,"CRIT, ATK%, ER%",EoSF / NO / TotM / Electro+15% / Burst+20% / ATK+18%
-Sayu,,ER% / ATK% / EM,ATK% / EM,Healing Bonus / ATK% / EM,ATK% ≥ EM; ER%,VV / DM / NO / OHC / ER+20% / EM+80 / ATK+18% / Anemo+15%
-Sayu,Favonius,ER% / ATK% / EM,ATK% / EM,Healing Bonus / ATK% / EM / Crit Rate,"ATK% ≥ EM, Crit Rate; ER% ",VV / DM / NO / OHC / ER+20% / EM+80 / ATK+18% / Anemo+15%
-Sayu,On-field driver,ATK% / EM,Anemo DMG% / EM,"CRIT, EM",CRIT > EM = ATK%,VV / DM / OHC / ER+20% / EM+80 / ATK+18% / Anemo+15%
+Sayu,Burst support,ER% / ATK% / EM,ATK% / EM,Healing Bonus / ATK% / EM,ATK% ≥ EM; ER%,VV / NO / OHC / ER+20% / EM+80 / ATK+18% / Anemo+15%
+Sayu,"Burst support, Favonius",ER% / ATK% / EM,ATK% / EM,Healing Bonus / ATK% / EM / Crit Rate,"ATK% ≥ EM, Crit Rate; ER% ",VV / NO / OHC / ER+20% / EM+80 / ATK+18% / Anemo+15%
+Sayu,On-field driver,ATK% / EM,Anemo DMG% / EM,"CRIT, EM",CRIT > EM = ATK%,VV / OHC / ER+20% / EM+80 / ATK+18% / Anemo+15%
+Sayu,"Burst support, Dendro team",ER% / ATK% / EM,ATK% / EM,Healing Bonus / ATK% / EM,ATK% ≥ EM; ER%,DM
+Sayu,"Burst support, Dendro team, Favonius",ER% / ATK% / EM,ATK% / EM,Healing Bonus / ATK% / EM / Crit Rate,"ATK% ≥ EM, Crit Rate; ER% ",DM
+Sayu,"On-field driver, Dendro team",ATK% / EM,Anemo DMG% / EM,"CRIT, EM",CRIT > EM = ATK%,DM
 Sethos,,EM / ER%,Electro DMG%,CRIT,CRIT > EM > ATK%; ER%,WT / GD / DPC / EM+80 / Electro+15% / NACA+25% 
 Shenhe,,ATK% / ER%,ATK% > Cryo DMG%,ATK%,ATK% > CRIT; ER%,NO / BS / ATK+18% / ER+20% / EoSF / TotM / Cryo+15% / Burst+20%
 Shenhe,Favonius,ATK% / ER%,ATK% > Cryo DMG%,ATK% > Crit Rate,ATK% > Crit Rate ≥ CRIT; ER%,NO / BS / ATK+18% / ER+20% / EoSF / TotM / Cryo+15% / Burst+20%
